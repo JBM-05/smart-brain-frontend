@@ -1,0 +1,57 @@
+.App {
+  text-align: center; 
+  position: relative; /* Allows stacking content above the particles */
+  z-index: 1;         /* Ensures content stays above the particles */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.center{
+  display: flex;
+  justify-content: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Position the Particles component as a background */
+#particles-background {
+  position: fixed; /* Fixed position to cover the viewport */
+  width: 100%;    /* Full width */
+  height: 100%;   /* Full height */
+  top: 0;
+  left: 0;
+  z-index: -1;     /* Make sure it's behind all other elements */
+  overflow: hidden;
+}
+
+/* Ensure main content is above the particles */
+
