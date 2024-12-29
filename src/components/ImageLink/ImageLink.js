@@ -3,7 +3,7 @@ import "./ImageLink.css";
 
 const ImageLink = ({ OnInputChange, OnButtonChange, id, updatingEntries }) => {
   const fetching = () => {
-    fetch("https://smart-brain-api-6.onrender.com/image", {
+    fetch("https://smart-brain-api-9.onrender.com/image", {
       method: "put",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
